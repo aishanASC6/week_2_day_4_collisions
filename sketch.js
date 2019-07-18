@@ -19,6 +19,7 @@ function setup() {
 
     // switch rectmode
     rectMode(CENTER); // the origin will be the center
+    imageMode(CENTER);
 
     // determine the random position of the enemy
     enemyPosX = random(25, 475);
@@ -38,7 +39,7 @@ function draw() {
     image(togepi, enemyX, enemyY, enemyWidth, enemyHeight);
 
     // draw yourself
-    image(clefairy, posX, posY, posWidth, poxHeight);
+    image(clefairy, posX, posY, 50, 50);
     //draw the red enemy
     fill (255, 0, 0);
     rect(enemyPosX, enemyPosY, enemyWidth, enemyHeight);
@@ -121,3 +122,4 @@ text("Enemies collected: " + points, 340, 25);
 }
 
 
+    
